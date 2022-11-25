@@ -1,0 +1,17 @@
+{
+  "name": "lang-guesser",
+  "version": "1.0.0",
+  "description": "Accepts a sentence or a string as a command line argument and returns the name of the language.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ashmit Das",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "franc": "^6.1.0",
+    "langs": "^2.0.0"
+  }
+}
