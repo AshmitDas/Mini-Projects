@@ -1,0 +1,30 @@
+.news-card {
+  display: inline-block;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    width: 30%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 7px;
+    margin:1.3rem 0.7rem;
+    overflow: hidden;
+  }
+  .news-card > h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+  .news-card > p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  .news-card > a {
+    justify-self: center;
+    display: inline-block;
+    background-color: #f44336;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+  }

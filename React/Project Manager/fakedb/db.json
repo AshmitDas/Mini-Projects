@@ -1,0 +1,36 @@
+{
+  "projects": [
+    {
+      "title": "NodeJS",
+      "description": "NodeJS Demo Project",
+      "assinedTo": "EFG",
+      "status": "1",
+      "endDate": "2023-03-21",
+      "category": "data-analytics",
+      "id": 3
+    },
+    {
+      "title": "Python",
+      "description": "Demo",
+      "assinedTo": "ACX",
+      "status": "0",
+      "endDate": "2023-03-15",
+      "category": "django",
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "name": "Ashmit Das",
+      "designation": "ASE",
+      "dob": "2023-01-09",
+      "id": 1
+    },
+    {
+      "name": "Harris",
+      "designation": "Java Developer",
+      "dob": "",
+      "id": 3
+    }
+  ]
+}
