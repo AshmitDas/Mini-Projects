@@ -1,0 +1,21 @@
+<div class="d-flex flex-row" *ngIf="loading; else elseBlock">
+
+    <div class="d-flex flex-shrink-1 m-3 rounded border border-primary-subtle">
+        <img src="{{productData.image}}" class="rounded mx-auto img-card p-3" alt="">
+    </div>
+
+    <div class="d-flex flex-column flex-grow-1 m-2">
+        <h1 class="mb-2">{{productData.title}}</h1>
+        <p class="p-2">{{productData.description}}</p>
+        <div>
+            <a (click)="getProductIntoCart(productData.id)" class="flex-start btn btn-primary mx-auto">Add To cart</a>
+        </div>
+    </div>
+</div>
+
+<ng-template #elseBlock>
+    <div class="d-flex flex-row justify-items-center align-items-center">
+      <strong>Loading...</strong>
+      <div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
+    </div>
+  </ng-template>

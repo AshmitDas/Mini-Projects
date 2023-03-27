@@ -1,0 +1,25 @@
+<div class="d-flex flex-row flex-wrap m-2" *ngIf="loading; else elseBlock">
+  <div class="m-2" *ngFor="let product of allCategoryItems">
+    <div class="card h-auto" style="width: 18rem;">
+      <img src={{product.image}} class="card-img-top img-card mx-auto p-2" alt="...">
+      <div class="card-body">
+        <a class="nav-link text-sm" [routerLink]="['product/'] + product.id"><h5 class="card-title">{{product.title.slice(0,25)}}</h5></a>
+        <p class="card-text">{{product.description.slice(0,100)}}...</p>
+        <a (click)="getProductIntoCart(product.id)" class="btn btn-primary mx-auto">Add To cart</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<ng-template #elseBlock>
+  <div class="d-flex flex-row justify-items-center align-items-center">
+    <strong>Loading...</strong>
+    <div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
+  </div>
+</ng-template>
+
+
+
+
+<!-- allCategoryItems -->
